@@ -1,5 +1,5 @@
-modelFileUrl: "https://github.com/api-generation/library/blob/main/library.xml"
-outputDirUrl: "https://github.com/api-generation/library/blob/main/generated"
+modelFileUrl: "https://github.com/mghaigh/library_v2/blob/main/library.xml"
+outputDirUrl: "https://github.com/mghaigh/library_v2/blob/main/generated"
 modelConfig:
   packageNames:
     typesPackage: "Types Folder"
