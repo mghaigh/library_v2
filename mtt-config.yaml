@@ -21,15 +21,15 @@ dependencies:
     modelFileUrl: "https://github.com/api-generation/core-types/blob/main/generated/mtt-models/core-types.json"
     version: "1.0.0"
 loader:
-  configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/loaders/ea-xmi/config.yaml"
-  outputSubDir: "mtt-models"
+  generatorUrl: "http://localhost:8005"  
+  configFileUrl: "https://github.com/mghaigh/common-config/blob/main/config/loaders/ea-xmi/config.yaml"
 generators:
-  graphql:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/graphql/config.yaml"
-    outputSubDir: "specs/graphql"
-  openapi:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/openapi/config.yaml"
-    outputSubDir: "specs/openapi"
-  mkdocs:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/mkdoc/config.yaml"
-    outputSubDir: "docs/mkdocs"
+#  GraphQL:
+  - generatorUrl: "http://localhost:9025"
+    configFileUrl: "https://github.com/mghaigh/common-config/blob/main/config/generators/graphql/config.yaml"
+#  OpenAPI:
+  - generatorUrl: "http://localhost:9010"
+    configFileUrl: "https://github.com/mghaigh/common-config/blob/main/config/generators/openapi/config.yaml"
+#  MkDocs:
+  - generatorUrl: "http://localhost:9020"  
+    configFileUrl: "https://github.com/mghaigh/common-config/blob/main/config/generators/mkdoc/config.yaml"
