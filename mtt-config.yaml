@@ -21,7 +21,7 @@ dependencies:
     modelFileUrl: "https://github.com/api-generation/core-types/blob/main/generated/mtt-models/core-types.json"
     version: "1.0.0"
 loader:
-  generatorUrl: "http://localhost:8005"  
+  loaderUrl: "http://localhost:7010"  
   configFileUrl: "https://github.com/mghaigh/common-config/blob/main/config/loaders/ea-xmi/config.yaml"
 generators:
 #  GraphQL:
